@@ -3,13 +3,15 @@ from ubuntu:wily
 # Installing installation tool that enables apt-add-repository
 RUN apt-get update && apt-get install -y software-properties-common
 RUN apt-add-repository ppa:ubuntu-lxc/lxd-stable
+RUN apt-add-repository ppa:team-gcc-arm-embedded/ppa
 RUN apt-get update && apt-get install -y \
     ruby-dev rubygems gcc make \    
     bats \
     golang \ 
     git \
     python \
-    curl zip unzip psmisc
+    curl zip unzip psmisc \
+    gcc-arm-embedded 
 
 # Golang
 ENV GOPATH /go

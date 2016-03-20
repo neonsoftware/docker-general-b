@@ -1,8 +1,6 @@
-from ubuntu:wily 
+from ubuntu:xenial 
 
 # Installing installation tool that enables apt-add-repository
-RUN apt-get update && apt-get install -y software-properties-common
-RUN apt-add-repository ppa:ubuntu-lxc/lxd-stable
 RUN apt-get update && apt-get install -y \
     ruby-dev rubygems gcc make \    
     bats \
