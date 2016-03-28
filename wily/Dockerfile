@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
     git \
     python \
     curl zip unzip psmisc \
-    gcc-arm-embedded 
+    gcc-arm-embedded \
+    python-pip
 
 # Golang
 ENV GOPATH /go
@@ -20,3 +21,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 
 # Fpm
 RUN gem install fpm 
+
+# svgwrite
+RUN pip install svgwrite 
