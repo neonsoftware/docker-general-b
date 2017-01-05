@@ -1,5 +1,6 @@
-# docker-general-b
-Docker image for ubuntu + go + arm tools + other packages I use
+== docker-general-b
+
+Docker images for ubuntu + go + arm tools + fpm for making debian packages
 
 Available https://hub.docker.com/r/thsfewer/docker-general-b/[on Dockerhub]
 ----
