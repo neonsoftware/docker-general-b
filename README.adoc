@@ -1,0 +1,9 @@
+# docker-general-b
+Docker image for ubuntu + go + arm tools + other packages I use
+
+Available on Dockerhub.
+
+https://hub.docker.com/r/thsfewer/docker-general-b/[on Dockerhub]
+----
+docker pull thsfewer/docker-general-b
+----
